@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Recommendation App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <div>MOODIFY</div>
+    </header>
+    <div class="detect">
+      <div class="container">
+        <video id="video" height="375" width="500" autoplay muted></video>
+      </div>
+      <div class="result-container">
+        <div id="emotion">ANALYZING YOUR FACE...</div>
+        <div id="loading" class="center hide">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+        <div id="playlist-icon" class="playlist-icon">
+          <a id="playlist" href="" target="_blank">
+            <img src="youtube.png" alt="playlist" class="icon" width="50px">
+            <!-- <span class="icon">playlist_play</span> -->
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
